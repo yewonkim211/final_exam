@@ -3,7 +3,7 @@
 # ● 아래의 코드를 수정 혹은 프로그래밍하여 문제를 해결하시오.
 # ● 문제의 점수는 각각 표시되며, 부분점수가 존재합니다.
 #
-# 학번 : ________ 이름 : ______
+# 학번 : 20212043__ 이름 : 김예원
 
 import os
 import time
@@ -20,7 +20,8 @@ import time
 # 1 ≤ target 의 길이 ≤ 100
 # target 은 영소문자로만 이루어져 있습니다.
 
-def solution(my_strung, target):
+def solution(my_strung, target): 
+    #if문 써서 경우의 수로 나눠서 / 문제는 target이 my_string이랑 비교해서
     answer = 0
     return answer
 

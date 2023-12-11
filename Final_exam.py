@@ -20,10 +20,13 @@ import time
 # 1 ≤ target 의 길이 ≤ 100
 # target 은 영소문자로만 이루어져 있습니다.
 
-def solution(my_strung, target): 
+def solution(my_string, target): 
     #if문 써서 경우의 수로 나눠서 / 문제는 target이 my_string이랑 비교해서
-    answer = 0
-    return answer
+        if len(my_string) <1 or len(my_string) >100 or len(target)=<1 or len(target)>100 : return "not"
+        if target in my_string :
+                return 1
+                else : 0
+return 0
 
 # Q.2 10점
 #
@@ -46,6 +49,10 @@ def solution(letter):
     '--':'m','-.':'n','---':'o','.--.':'p','--.-':'q','.-.':'r',
     '...':'s','-':'t','..-':'u','...-':'v','.--':'w','-..-':'x',
     '-.--':'y','--..':'z'}
+
+
+letter = "hello world"
+
     answer = ''
     return answer
 
@@ -64,6 +71,7 @@ def solution(letter):
 # PROGRAMMERS-857 행성은 알파벳 소문자만 사용합니다.
 
 def solution(age):
+        
     answer = ''
     return answer
 

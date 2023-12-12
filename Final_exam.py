@@ -141,8 +141,8 @@ num_str.sort(k=lambda x: x*4, cmp = com, reverse=True)
 #만들기
 answer = ''.join(num_str)
 
-#숫자가 아닌거 빼기
+#0이 되는 답 제외하기
 if answer[0] =='0':
     answer = '0'
-print(answer)
+print(solution(answer))
     return answer

@@ -24,8 +24,8 @@ def solution(my_string, target):
     #if문 써서 경우의 수로 나눠서 / 문제는 target이 my_string이랑 비교해서
         if len(my_string) <1 or len(my_string) >100 or len(target)=<1 or len(target)>100 : return "not"
         if target in my_string :
-                return 1
-                else : 0
+                              print( 1)
+                else : print(0)
 return 0
 
 # Q.2 10점
@@ -128,13 +128,14 @@ else:
 #
 # numbers = [8, 30, 17, 2, 23]
 
-def solution(numbers):
+def solution(numbers): 
+    numbers = [8, 30, 17, 2, 23]
     #비교함수
     def com(x,y):
         return int(x+y)-int(y+x)
 #조합
 num_str = list(map(str,numbers))
-num_str.sort(key=lambda x: x*4, cmp = com, reverse=True)
+num_str.sort(k=lambda x: x*4, cmp = com, reverse=True)
 
 #만들기
 answer = ''.join(num_str)
@@ -142,5 +143,5 @@ answer = ''.join(num_str)
 #숫자가 아닌거 빼기
 if answer[0] =='0':
     answer = '0'
-
+print(answer)
     return answer

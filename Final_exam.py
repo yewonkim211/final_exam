@@ -101,9 +101,9 @@ def solution(r1, r2):
     #두 원의 중심 사이의 거리
     distance = r2- r1
 
-    #점의 개수
+    #점의 개수 r2-r1 -1을 해야 개수가 나옴
     if distance >1 :
-        answer = (distance -1)*2
+        answer = distance -1
 else:
     answer = 0
     return answer

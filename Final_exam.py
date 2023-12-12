@@ -53,8 +53,8 @@ def solution(letter):
 
 letter = "hello world"
 
-    answer = ''
-    return answer
+    
+    return letter
 
 # Q.3 10점
 #
@@ -71,8 +71,18 @@ letter = "hello world"
 # PROGRAMMERS-857 행성은 알파벳 소문자만 사용합니다.
 
 def solution(age):
-        
-    answer = ''
+    #숫자랑 알파벳이랑 맞춤
+    alphabet_to_num = {chr(ord('a')+i) : i for i in range(26)}
+
+#PROGEAMMER-857식 나이로 만들기
+    change_age = ''
+while age>0 :
+    remainder = age %26
+    change_age = chr(ord('a')+remainder)+change_age
+    age//=26
+
+    answer = "PROGRAMMER-" + change_age
+    print(answer)
     return answer
 
 # Q.4 10점
@@ -88,6 +98,13 @@ def solution(age):
 # 1 ≤ r1 < r2 ≤ 1,000,000
 
 def solution(r1, r2):
+    #두 원의 중심 사이의 거리
+    distance = r2- r1
+
+    #점의 개수
+    if distance >1 :
+        answer = (distance -1)*2
+else:
     answer = 0
     return answer
 
@@ -112,5 +129,18 @@ def solution(r1, r2):
 # numbers = [8, 30, 17, 2, 23]
 
 def solution(numbers):
-    answer = ''
+    #비교함수
+    def com(x,y):
+        return int(x+y)-int(y+x)
+#조합
+num_str = list(map(str,numbers))
+num_str.sort(key=lambda x: x*4, cmp = com, reverse=True)
+
+#만들기
+answer = ''.join(num_str)
+
+#숫자가 아닌거 빼기
+if answer[0] =='0':
+    answer = '0'
+
     return answer

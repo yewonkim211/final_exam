@@ -73,7 +73,7 @@ letter = "hello world"
 def solution(age):
     #숫자랑 알파벳이랑 맞춤
     alphabet_to_num = {chr(ord('a')+i) : i for i in range(26)}
-
+age = 857
 #PROGEAMMER-857식 나이로 만들기
     change_age = ''
 while age>0 :
@@ -100,7 +100,8 @@ while age>0 :
 def solution(r1, r2):
     #두 원의 중심 사이의 거리
     distance = r2- r1
-
+    r1 = 10
+    r2 = 5
     #점의 개수 r2-r1 -1을 해야 개수가 나옴
     if distance >1 :
         answer = distance -1

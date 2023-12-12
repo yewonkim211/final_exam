@@ -79,7 +79,7 @@ age = 857
 while age>0 :
     remainder = age %26
     change_age = chr(ord('a')+remainder)+change_age
-    age//=26
+    
 
     answer = "PROGRAMMER-" + change_age
     print(answer)
